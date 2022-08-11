@@ -30,4 +30,49 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  base_title: "Ruby on Rails Tutorial Sample App"
+  sample_app: "Sample App"
+  layouts:
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+    footer:
+      about: "About"
+      contact: "Contact"
+      news: "News"
+      by: "by"
+  static_pages:
+    home:
+      heading: "Home"
+      welcome: "Welcome to the Sample App"
+      intro: "This is the home page for the"
+      signup: "Sign up now!"
+      en: "English"
+      in: "Vietnamese"
+    help:
+      heading: "Help"
+      intro: "Get help on the Ruby on Rails Tutorial at the"
+      page_name: "Rails Tutorial Help page"
+      book_page: "To get help on this sample app, see the"
+      book: "book"
+    contact:
+      heading: "Contact"
+      intro: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact: "contact page"
+    about:
+      heading: "About"
+      intro: "This is the sample app for the tutorial."
+      part_of: "part of the"
+      part_of_fam: "family of tutorials"
+      learn_enough: "Learn Enough"
+      teach: "to teach web development with"
+      is_a: "is a"
+      and: "and"
+      book: "book"
+      framework_name: Ruby on Rails
+      screencast_series: screencast series
+  users:
+    new:
+      signup: "Sign up"
+      intro: "Sign up page for new users."

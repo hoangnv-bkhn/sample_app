@@ -1,0 +1,16 @@
+<% provide(:title, t(".heading")) %>
+<h1>About</h1>
+<p>
+  The <a href="https://www.railstutorial.org/"><em>Ruby on Rails
+      Tutorial</em></a>, <%= t(".part_of") %>
+  <%# <a href="https://www.learnenough.com/">Learn Enough</a>  %>
+  <%= link_to t(".learn_enough"), Settings.url.rails_new_url %>
+  <%= t(".part_of_fam") %>, <%= t(".is_a") %>
+  <%= link_to t(".book"), Settings.url.rails_book_url %>
+  <%= t(".and") %>
+  <%# <a href="https://screencasts.railstutorial.org/">screencast series</a> %>
+  <%= link_to t(".screencast_series"), Settings.url.rails_screencasts_url %>
+  <%= t(".teach") %>
+  <%= link_to t(".framework_name"), Settings.url.rails_home_url %>.
+  <%= t(".intro") %>
+</p>

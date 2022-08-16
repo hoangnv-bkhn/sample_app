@@ -37,6 +37,11 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      logout: "Log out"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
     footer:
       about: "About"
       contact: "Contact"
@@ -90,3 +95,15 @@ en:
     error_messages:
       intro: "The form contains"
       error: "Error"
+  sessions:
+    new:
+      heading: "Log in"
+      new_user: "New user?"
+      signup: "Sign up now!"
+      form:
+        email: "Email"
+        password: "Password"
+        btn_submit: "Log in"
+    create:
+      login_success: "Wellcome to the Sample App"
+      login_fail: "Invalid email or password combination"

@@ -6,6 +6,11 @@ vi:
       home: "Trang chủ"
       help: "Hỗ  trợ"
       login: "Đăng nhập"
+      logout: "Đăng xuất"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
     footer:
       about: "Giới thiệu"
       contact: "Liên hệ"
@@ -59,3 +64,15 @@ vi:
     error_messages:
       intro: "Biểu mẫu có"
       error: "Lỗi"
+  sessions:
+    new:
+      heading: "Đăng nhập"
+      new_user: "Người dùng mới?"
+      signup: "Đăng ký ngay!"
+      form:
+        email: "Email"
+        password: "Mật khẩu"
+        btn_submit: "Đăng nhập"
+    create:
+      login_success: "Chào mừng đến với Sample App"
+      login_fail: "Email hoặc mật khẩu không chính xác"

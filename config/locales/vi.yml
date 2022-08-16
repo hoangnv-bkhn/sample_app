@@ -43,5 +43,19 @@ vi:
       screencast_series: loạt bài giảng
   users:
     new:
-      signup: "Đăng ký"
-      intro: "Trang đăng ký cho người dùng mới." 
+      heading: "Đăng ký"
+      form:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirm: "Xác nhận mật khẩu"
+        btn_submit: "Tạo tài khoản"
+    show:
+      user_not_found: "Không tìm thấy người dùng"
+    create:
+      signup_success: "Chào mừng đến với Sample App!"
+      signup_fail: "Có lỗi xảy ra. Vui lòng thử lại."
+  shared:
+    error_messages:
+      intro: "Biểu mẫu có"
+      error: "Lỗi"

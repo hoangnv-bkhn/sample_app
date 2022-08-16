@@ -74,5 +74,19 @@ en:
       screencast_series: screencast series
   users:
     new:
-      signup: "Sign up"
-      intro: "Sign up page for new users."
+      heading: "Sign up"
+      form:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirm: "Password confirmation"
+        btn_submit: "Create my account"
+    show:
+      user_not_found: "User not found"
+    create:
+      signup_success: "Wellcome to the Sample App"
+      signup_fail: "Errors occurred. Please try again."
+  shared:
+    error_messages:
+      intro: "The form contains"
+      error: "Error"

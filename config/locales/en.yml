@@ -78,7 +78,9 @@ en:
       framework_name: Ruby on Rails
       screencast_series: screencast series
   users:
+    require_login: "Please log in"
     new:
+      create: "Create my account"
       heading: "Sign up"
       form:
         name: "Name"
@@ -86,11 +88,28 @@ en:
         password: "Password"
         password_confirm: "Password confirmation"
         btn_submit: "Create my account"
+    edit:
+      edit_user: "Edit user"
+      update_profile: "Update your profile"
+      confirmation: "Confirmation"
+      save_change: "Save Change"
+      change: "Change"
     show:
       user_not_found: "User not found"
+    index:
+      heading: "All users"
     create:
       signup_success: "Wellcome to the Sample App"
       signup_fail: "Errors occurred. Please try again."
+    update:
+      alert_update_user_success: "Update user success"
+      alert_update_user_fail: "Update user fail"
+    destroy:
+      delete_success: "User has been deleted!"
+      delete_fail: "Delete user fail!"
+    user:
+      delete: "Delete"
+      confirm: "Are you sure?"
   shared:
     error_messages:
       intro: "The form contains"

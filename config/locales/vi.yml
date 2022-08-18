@@ -47,7 +47,9 @@ vi:
       framework_name: Ruby on Rails
       screencast_series: loạt bài giảng
   users:
+    require_login: "Xin hãy đăng nhập"
     new:
+      create: "Đăng ký tài khoản"
       heading: "Đăng ký"
       form:
         name: "Tên"
@@ -55,11 +57,28 @@ vi:
         password: "Mật khẩu"
         password_confirm: "Xác nhận mật khẩu"
         btn_submit: "Tạo tài khoản"
+    edit:
+      edit_user: "Chỉnh sửa thông tin"
+      update_profile: "Cập nhật thông tin"
+      confirmation: "Nhap lai"
+      save_change: "Lưu thay đổi"
+      change: "Thay đổi"
     show:
       user_not_found: "Không tìm thấy người dùng"
+    index:
+      heading: "Tất cả người dùng"
     create:
       signup_success: "Chào mừng đến với Sample App!"
       signup_fail: "Có lỗi xảy ra. Vui lòng thử lại."
+    update:
+      alert_update_user_success: "Cập nhật người dùng thành công"
+      alert_update_user_fail: "Cập nhật người dùng thất bại"
+    destroy:
+      delete_success: "Người dùng đã bị xóa!"
+      delete_fail: "Xóa người dùng thất bại!"
+    user:
+      delete: "Xóa"
+      confirm: "Bạn chắc chắn muốn xóa?"
   shared:
     error_messages:
       intro: "Biểu mẫu có"

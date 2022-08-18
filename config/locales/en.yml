@@ -104,6 +104,7 @@ en:
         email: "Email"
         password: "Password"
         btn_submit: "Log in"
+        remember: "Remember me on this computer"
     create:
       login_success: "Wellcome to the Sample App"
       login_fail: "Invalid email or password combination"

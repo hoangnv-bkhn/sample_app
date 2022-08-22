@@ -82,12 +82,12 @@ en:
     new:
       create: "Create my account"
       heading: "Sign up"
-      form:
-        name: "Name"
-        email: "Email"
-        password: "Password"
-        password_confirm: "Password confirmation"
-        btn_submit: "Create my account"
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirm: "Password confirmation"
+      btn_submit: "Create my account"
     edit:
       edit_user: "Edit user"
       update_profile: "Update your profile"
@@ -101,6 +101,7 @@ en:
     create:
       signup_success: "Wellcome to the Sample App"
       signup_fail: "Errors occurred. Please try again."
+      mail_notice: "Please check your email to complete the registration"
     update:
       alert_update_user_success: "Update user success"
       alert_update_user_fail: "Update user fail"
@@ -127,3 +128,14 @@ en:
     create:
       login_success: "Wellcome to the Sample App"
       login_fail: "Invalid email or password combination"
+      account_not_activated: "Account not activated. Check your email for the activation link."
+  account_activations:
+    edit:
+      user_success: "Account activated"
+      user_unsuccess: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      account_activation: "Account activation"
+      welcome_to: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Account activation"
+      hi: "Hi"

@@ -5,11 +5,15 @@ class UsersController < ApplicationController
   before_action :admin_user, only: %i(destroy)
 
   def index
-    @pagy, @users = pagy User.all, page: params[:page],
-                                   items: Settings.pagy.page_size
+    @pagy, @users = pagy User.activated, page: params[:page],
+                                         items: Settings.pagy.page_size
   end
 
   def show
+    return if @user&.activated?
+
+    flash[:danger] = t ".not_found"
+    redirect_to root_path
   end
 
   def new
@@ -19,17 +23,16 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user
-      flash[:success] = t(".signup_success")
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".mail_notice"
+      redirect_to root_url
     else
       flash[:danger] = t(".signup_fail")
       render :new
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @user.update(user_params)

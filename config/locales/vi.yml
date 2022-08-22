@@ -22,6 +22,7 @@ vi:
       welcome: "Chào mừng bạn đến với Sample App"
       intro: "Đây là trang chủ của"
       signup: "Đăng ký ngay"
+      forgot_password: "(quên mật khẩu)"
       en: "Tiếng Anh"
       in: "Tiếng Việt"
     help:
@@ -108,3 +109,31 @@ vi:
       welcome_to: "Chào mừng bạn đến với Sample App, click vào link bên dưới để kích hoạt tài khoản"
       activate: "Kích hoạt tài khoản"
       hi: "Xin chào"
+    password_reset:
+      password_reset: "Đặt lại mật khẩu"
+      tutorial: "Để đặt lại mật khẩu của bạn thì hãy nhấn vào liên kết bên dưới"
+      time_expire: "Thời hạn của liên kêt này là 2 giờ"
+      if_not_request: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ giữ nguyên."
+      reset_password: "Đặt lại mật khẩu"
+  password_resets:
+    create:
+      email_send_success: "Hướng dẫn đặt lại mật khẩu đã được gửi về mail"
+      email_not_found: "Không tìm thấy địa chỉ email."
+    update:
+      not_empty: "Không được để trống"
+      password_reset_success: "Mật khẩu đã được đặt lại."
+      password_reset_faid: "Có lỗi xảy ra. Xin hãy thử lại."
+    check_expiration:
+      password_expried: "Quá hạn đặt lại mật khẩu."
+    edit:
+      heading: "Đặt lại mật khẩu"
+      form:
+        password: "Mật khẩu"
+        password_confirm: "Xác nhận mật khẩu"
+        btn_submit: "Cập nhật mật khẩu"
+    get_user:
+      user_not_found: "Người dùng không tìm thấy"
+    new:
+      heading: "Quên mật khẩu"
+      form:
+        btn_submit: "Xác nhận"

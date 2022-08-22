@@ -14,6 +14,7 @@ valid:
   name_max_len: 50
   email_max_len: 255
   password_min_len: 6
+  password_reset_expired_hours: 2
 
 gravatar:
   default_size: 80

@@ -18,10 +18,20 @@ valid:
 
 gravatar:
   default_size: 80
-  options_index_size: 20
+  options_index_size: 50
+  options_micropost_size: 50
+  user_info_size: 50
 
 regex:
   email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
 pagy:
   page_size: 20
+
+micropost:
+  content_max: 140
+  accept_path: "image/jpeg,image/gif,image/png"
+  size: 50
+  image_type: ["image/jpeg", "image/gif", "image/png"]
+  resize_to_limit: [500, 500]
+  image_size: 5

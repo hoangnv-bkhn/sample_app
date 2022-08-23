@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: %i(show create new)
+  before_action :logged_in_user, except: %i(create new)
   before_action :find_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
@@ -10,10 +10,14 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user&.activated?
-
-    flash[:danger] = t ".not_found"
-    redirect_to root_path
+    if @user&.activated?
+      @pagy, @microposts = pagy @user.microposts.newest,
+                                page: params[:page],
+                                items: Settings.pagy.page_size
+    else
+      flash[:danger] = t ".not_found"
+      redirect_to root_path
+    end
   end
 
   def new
@@ -59,15 +63,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :email, :password,
                                  :password_confirmation)
-  end
-
-  # Confirms a logged-in user.
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t ".require_login"
-    redirect_to login_path
   end
 
   # Confirms the correct user.

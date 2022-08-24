@@ -22,6 +22,10 @@ vi:
       welcome: "Chào mừng bạn đến với Sample App"
       intro: "Đây là trang chủ của"
       signup: "Đăng ký ngay"
+      micropost_feed: "Các bài đăng"
+      rails_href: "Hướng dẫn Ruby on Rails"
+      sample_app: "Sample application"
+      logo_alt: "Rails Logo"
       forgot_password: "(quên mật khẩu)"
       en: "Tiếng Anh"
       in: "Tiếng Việt"
@@ -66,6 +70,7 @@ vi:
       change: "Thay đổi"
     show:
       user_not_found: "Không tìm thấy người dùng"
+      microposts: "Các bài đăng"
     index:
       heading: "Tất cả người dùng"
     create:
@@ -85,6 +90,13 @@ vi:
     error_messages:
       intro: "Biểu mẫu có"
       error: "Lỗi"
+    micropost_form:
+      new_micropost: "Hãy viết bài đăng mới..."
+      post: "Đăng"
+      large_img_error: "Kích cỡ tối đa của ảnh là 5MB, hãy chọn ảnh nhỏ hơn."
+    user_info:
+      view_my_profile: "Xem bài đăng của tôi"
+      micropost: "Bài đăng"
   sessions:
     new:
       heading: "Đăng nhập"
@@ -137,3 +149,25 @@ vi:
       heading: "Quên mật khẩu"
       form:
         btn_submit: "Xác nhận"
+  microposts:
+    create:
+      not_log_in: "Hãy đăng nhập"
+      save_success: "Bài viết đã được tạo"
+    destroy:
+      micropost_deleted: "Bài viết đã bị xóa"
+      not_micropost_deleted: "Không thể xóa bài viết"
+    micropost:
+      posted: "Bài viết được đăng"
+      ago: "trước."
+      delete: "Xóa"
+      you_sure: "Bạn chắc chứ?"
+    find_micropost:
+      find_micropost_fail: "Không thể tìm thấy micropost"
+  activerecord:
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              wrong_format: "Phải là định dạng hình ảnh hợp lệ"
+              too_big: "Kích thước hình ảnh quá lớn"

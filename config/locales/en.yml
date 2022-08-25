@@ -114,6 +114,17 @@ en:
     destroy:
       delete_success: "User has been deleted!"
       delete_fail: "Delete user fail!"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      microposts: "Microposts"
+      view_profile: "View my profile"
     user:
       delete: "Delete"
       confirm: "Are you sure?"
@@ -128,6 +139,9 @@ en:
     user_info:
       view_my_profile: "View my profile"
       micropost: "Micropost"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       heading: "Log in"
@@ -194,6 +208,11 @@ en:
       you_sure: "You sure?"
     find_micropost:
       find_micropost_fail: "Cannot find micropost"
+  relationships:
+    find_user_for_create:
+      not_found: "User not found"
+    find_user_for_destroy:
+      not_found: "User not found"
   activerecord:
     errors:
       models:

@@ -23,7 +23,7 @@ class User < ApplicationRecord
                        allow_nil: true
   scope :activated, ->{where activated: true}
   scope :search, ->(term){where("name LIKE ?", "%#{term}%")}
-  
+
   has_secure_password
 
   class << self

@@ -73,6 +73,7 @@ vi:
       microposts: "Các bài đăng"
     index:
       heading: "Tất cả người dùng"
+      search: "Tìm kiếm"
     create:
       signup_success: "Chào mừng đến với Sample App!"
       signup_fail: "Có lỗi xảy ra. Vui lòng thử lại."

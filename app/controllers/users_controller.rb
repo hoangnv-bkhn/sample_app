@@ -5,8 +5,9 @@ class UsersController < ApplicationController
   before_action :admin_user, only: %i(destroy)
 
   def index
-    @pagy, @users = pagy User.activated, page: params[:page],
-                                         items: Settings.pagy.page_size
+    @pagy, @users = pagy User.search(params[:term]).activated,
+                         page: params[:page],
+                         items: Settings.pagy.page_size
   end
 
   def show

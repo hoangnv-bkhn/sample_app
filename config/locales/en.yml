@@ -104,6 +104,7 @@ en:
       microposts: "Microposts"
     index:
       heading: "All users"
+      search: "Search"
     create:
       signup_success: "Wellcome to the Sample App"
       signup_fail: "Errors occurred. Please try again."

@@ -2,9 +2,13 @@
   <%= link_to gravatar_for(micropost.user, size: Settings.gravatar.options_micropost_size),
                                                                                 micropost.user %>
   <span class="user"><%= link_to micropost.user.name, micropost.user %></span>
-  <span class="content">
+  <div>
     <%= micropost.content %>
-    <%= image_tag micropost.display_image if micropost.image.attached? %>
+  </div>
+  <span class="content">
+    <% micropost.images.each do |photo| %>
+      <%= image_tag micropost.display_image(photo) %>
+    <% end %>
   </span>
   <span class="timestamp">
     <%= t ".posted" %>

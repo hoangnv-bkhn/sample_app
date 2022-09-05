@@ -5,6 +5,7 @@
   </div>
   <%= f.submit t(".post"), class: "btn btn-primary" %>
   <span class="image">
-    <%= f.file_field :images, :multiple => true, accept: Settings.micropost.accept_path %>
+    <%= f.file_field :images, :onchange => "previewFiles(#{Settings.micropost.preview_size})", :multiple => true, accept: Settings.micropost.accept_path %>
   </span>
+  <div id="preview"></div>
 <% end %>
